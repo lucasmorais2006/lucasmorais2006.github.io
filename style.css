@@ -1,0 +1,96 @@
+body {
+    background-image: url('https://static.vecteezy.com/ti/fotos-gratis/p1/3334911-desktop-source-code-and-wallpaper-by-coding-and-programming-gratis-foto.jpg');
+    background-size: cover; /* Faz com que a imagem cubra toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color:red; /* Deixa o fundo da caixa mais claro para que o texto se destaque */
+    color: black;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    width: 90%; /* Largura para dispositivos menores */
+    max-width: 400px; /* Largura máxima para telas maiores */
+}
+
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button i {
+    margin-right: 10px;
+    font-size: 1.8em;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Estilos específicos para cada botão (opcional, para cores diferentes no hover) */
+.instagram:hover {
+    background-color: #E4405F; /* Cor do Instagram */
+    color: white;
+    border-color: #E4405F;
+}
+
+.linkedin:hover {
+    background-color: #0077B5; /* Cor do LinkedIn */
+    color: white;
+    border-color: #0077B5;
+}
+
+.github:hover {
+    background-color: #333; /* Cor do GitHub */
+    color: white;
+    border-color: #333;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    .button {
+        padding: 12px 15px;
+        font-size: 0.9em;
+    }
+
+    .button i {
+        font-size: 1em;
+    }
+}
